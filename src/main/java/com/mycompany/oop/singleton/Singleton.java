@@ -5,6 +5,29 @@
  */
 package com.mycompany.oop.singleton;
 
+/**
+ *
+ * @author Admin
+ */
+
+//NON THREAD-SAFE SINGLETON
+
 public class Singleton {
+    private static Singleton instance;
+    private String value;
+    private Singleton(String value) {
+        this.value = value;
+    }
+    
+    public static Singleton getInstance(String contex) {
+        if( instance == null ){
+            instance = new Singleton(contex);
+        }
+    return instance;
+    }
+    
+    public String getValue(){
+        return value;
+    }
     
 }
