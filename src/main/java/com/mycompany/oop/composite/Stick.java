@@ -3,20 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package com.mycompany.oop.composite;
 
 /**
  *
  * @author Admin
  */
-public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        
-       
+public class Stick implements Component {
+    @Override
+    public void show() {
+        System.out.println("Show stick");
     }
-    
 }
